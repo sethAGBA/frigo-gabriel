@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+  }
+
+
+  .heading-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.animate-bar{
+    width: 5rem;
+    height: 4px;
+    background-color: var(--main-color);
+    margin-top: 15px;
+    position: relative;
+}
+.animate-bar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%;
+    }
+}
+.sub-heading{
+    max-width: 40rem;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 1rem;
+}
+
+
+
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #f8f5f5;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Header */
+  .header {
+    background: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header .logo img {
+   width: 100%;
+   height: 1.8rem;
+   border: 1 transparent ;
+   border-radius: 50%;
+  }
+  
+  .navbar a {
+    margin: 0 1rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  .btn{
+    color: #8789993e;
+  }
+  .navbar a:hover {
+    color: #d81b60;
+  }
+  
+  .btn-primary {
+    background: #d81b60;
+    color: #fff;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: #b01750;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    background: #f8f5f5;
+    text-align: justify;
+    text-align: center;
+    
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  .hero-image img,
+  .hero-image video {
+    
+    max-width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 25rem;
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    font-size: 17px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: #333;
+
+  }
+  
+  .btn-secondary:hover {
+    background:transparent;
+  }
+  .btn{
+    background-color: var(--main-color);
+    font-size: 17px;
+    outline: none;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+.btn a{
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+  /* Masquer le bouton "toggle-menu" par défaut */
+.toggle-menu {
+  display: none;
+  background-color: #d81b60;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  top: 0;
+}
+  /* Footer */
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero {
+    margin-left: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+
+  .hero-image img,
+  .hero-image video {
+    
+    max-width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 15rem;
+  }
+  .navbar {
+    display: none; /* Masquer par défaut */
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.95); /* Fond semi-transparent */
+    position: fixed; /* Position au-dessus des autres éléments */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Prend toute la hauteur de l'écran */
+    z-index: 1000; /* Mettre la navbar au-dessus */
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar.active {
+    display: flex; /* Afficher le menu lorsqu'il est actif */
+  }
+
+  .navbar a {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333; /* Couleur du texte */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .navbar a:hover {
+    color: #d81b60; /* Couleur au survol */
+  }
+
+  /* Appliquer une transition fluide pour le menu */
+  .navbar {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  .navbar.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Ajuster le bouton toggle-menu */
+  .toggle-menu {
+    display: block;
+    position: fixed; 
+    right: 1rem;
+    z-index: 1100; 
+    background-color: #060606;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .toggle-menu:hover {
+    background-color: #030303; 
+  }
+ 
+}
+
+@media (max-width: 480px) {
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

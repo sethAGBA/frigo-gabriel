@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frigo Gabriel - Viandes Fraîches et de Qualité</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="./services.css" />
+    <link rel="stylesheet" href="./caroussel.css" />
+    <script
+      src="https://kit.fontawesome.com/de270889e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      name="description"
+      content="Frigo Gabriel, votre référence pour des viandes fraîches, emballées avec soin à Kara. Découvrez nos services et contactez-nous dès aujourd'hui !"
+    />
+    <meta
+      name="keywords"
+      content="viande fraîche, boucherie, Frigo Gloria, Kara, vente de viande, viande emballée"
+    />
+    <meta name="author" content="Frigo Gloria" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="./images/logo.jpg" alt="Logo Frigo Gabriel" />
+        </div>
+        <button class="toggle-menu" aria-label="Ouvrir le menu">☰</button>
+        <nav class="navbar">
+          <a href="#">Accueil</a>
+          <a href="#about">À Propos</a>
+          <a href="#services">Produits</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Section Héros -->
+    <main class="hero">
+        <div class="heading-wrapper">
+            <div class="heading">
+              <h2>Bienvenue chez Frigo Gabriel</h2>
+            </div>
+            <div class="animate-bar"></div>
+            <div class="sub-heading">
+              <p>
+                Nous sommes spécialisés dans la vente de viandes fraîches et de
+                qualité, emballées avec soin pour répondre à vos besoins. Chez Frigo
+                Gloria, votre satisfaction est notre priorité !
+              </p>
+            </div>
+          </div>
+     
+      <div class="hero-image">
+        <img src="./images/emporte.jpg" alt="Viande fraîche emballée" />
+      </div>
+    </main>
+
+    <!-- Section À Propos -->
+    <section class="about" id="about">
+      <div class="container about__container">
+        <div class="heading-wrapper">
+            <div class="heading">
+              <h2>À propos de Frigo Gabriel</h2>
+            </div>
+            <div class="animate-bar"></div>
+            <div class="sub-heading">
+              <p>
+                Frigo Gloria est une entreprise située à Kara, spécialisée dans la
+                distribution de viandes fraîches et emballées. Nous garantissons des
+                produits soigneusement sélectionnés, prêts à satisfaire les
+                exigences les plus élevées en matière de qualité et de fraîcheur.
+              </p>
+              </p>
+            </div>
+          </div>
+
+      
+        <div class="about__image">
+          <img src="./images/plat.jpg" alt="Viande prête à être emballée" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Produits -->
+    <section class="services" id="services">
+      <div class="container services__container">
+            <div class="heading-wrapper">
+                <div class="heading">
+                  <h2>Nos Produits</h2>
+                </div>
+                <div class="animate-bar"></div>
+              
+              </div>
+        <div class="services__grid">
+          <div class="service">
+            <img src="./images/viandes.jpeg" alt="Viande de Poulet" />
+            <h3>Viande de Poulet</h3>
+            <p>
+              Découvrez nos cuisses, ailes et autres morceaux de poulet,
+              parfaits pour tous vos plats.
+            </p>
+          </div>
+          <div class="service">
+            <img src="./images/emballe.jpg" alt="Viande de Bœuf" />
+            <h3>Viande de Porc</h3>
+            <p>
+              Viande tendre et savoureuse, soigneusement découpée et emballée
+              pour vos besoins.
+            </p>
+          </div>
+          <div class="service">
+            <img src="./images/plato.jpg" alt="Charcuterie" />
+            <h3>Charcuterie</h3>
+            <p>
+              Une gamme variée de produits de charcuterie, idéale pour vos
+              apéritifs et repas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Portfolio -->
+    <section id="portfolio">
+      <div class="heading-wrapper">
+        <div class="heading">
+          <h2>Nos Produits en Images</h2>
+        </div>
+        <div class="animate-bar"></div>
+        <div class="sub-heading">
+          <p>
+            Découvrez notre sélection de viandes fraîches et emballées avec
+            soin.
+          </p>
+        </div>
+      </div>
+
+      <!-- Gallery -->
+      <div class="gallery-wrapper">
+        <div class="gallery-nav">
+          <div class="gallery-filter">
+            <span class="filter-item active" data-filter="all">Tout</span>
+            <span class="filter-item" data-filter="poulet"
+              >Viande de Poulet</span
+            >
+            <span class="filter-item" data-filter="porc">Viande de Porc</span>
+            <span class="filter-item" data-filter="charcuterie"
+              >Charcuterie</span
+            >
+          </div>
+        </div>
+        <div class="content-wrapper">
+          <!-- Gallery Item Start -->
+          <div
+            class="gallery-item poulet"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <div class="gallery-item-inner">
+              <img src="./images/viandes.jpeg" alt="Cuisses de poulet" />
+              <div class="overlay">
+                <h5>Viande de Poulet</h5>
+                <p>
+                  Cuisses et ailes prêtes à cuire, soigneusement emballées pour
+                  vos recettes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item End -->
+
+          <!-- Gallery Item Start -->
+          <div
+            class="gallery-item porc"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <div class="gallery-item-inner">
+              <img src="./images/emballe.jpg" alt="Viande de porc" />
+              <div class="overlay">
+                <h5>Viande de Porc</h5>
+                <p>
+                  Morceaux tendres et savoureux, idéals pour vos repas en
+                  famille.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item End -->
+
+          <!-- Gallery Item Start -->
+          <div
+            class="gallery-item porc"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <div class="gallery-item-inner">
+              <img src="./images/cuisso.jpg" alt="Viande de porc" />
+              <div class="overlay">
+                <h5>Viande de Porc</h5>
+                <p>
+                  Morceaux tendres et savoureux, idéals pour vos repas en
+                  famille.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item End -->
+
+          <!-- Gallery Item Start -->
+          <div
+            class="gallery-item charcuterie"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <div class="gallery-item-inner">
+              <img src="./images/plato.jpg" alt="Plateau de charcuterie" />
+              <div class="overlay">
+                <h5>Charcuterie</h5>
+                <p>Une gamme variée pour vos apéritifs et dîners raffinés.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item End -->
+
+          <!-- Gallery Item Start -->
+          <div
+            class="gallery-item poulet"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <div class="gallery-item-inner">
+              <img src="./images/poule.jpeg" alt="Poulet entier" />
+              <div class="overlay">
+                <h5>Poulet Entier</h5>
+                <p>
+                  Parfait pour les plats rôtis ou mijotés, fraîcheur garantie.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item End -->
+
+          <!-- Gallery Item Start -->
+          <div
+            class="gallery-item charcuterie"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <div class="gallery-item-inner">
+              <img src="./images/plate.jpg" alt="Saucisses" />
+              <div class="overlay">
+                <h5>Saucisses</h5>
+                <p>Délicieuses saucisses pour vos grillades et apéritifs.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item End -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+      <div class="heading-wrapper">
+        <div class="heading">
+          <h2>Contactez-Nous</h2>
+        </div>
+        <div class="animate-bar"></div>
+      </div>
+
+      <div class="container">
+        <form action="#" data-aos="fade-right" data-aos-duration="1200">
+          <div class="title">
+            <h4>Envoyez-nous un message</h4>
+          </div>
+
+          <div class="form-row">
+            <div class="input-data">
+              <input type="text" placeholder="Nom" required />
+            </div>
+            <div class="input-data">
+              <input type="text" placeholder="Email" required />
+            </div>
+          </div>
+          <div class="input-data">
+            <input type="text" placeholder="Objet" required />
+          </div>
+          <div class="input-data">
+            <textarea
+              name="Message"
+              placeholder="Votre message"
+              required
+            ></textarea>
+          </div>
+          <div class="form-row">
+            <input type="submit" value="Envoyer le message" class="btn" />
+          </div>
+        </form>
+
+        <div
+          class="contact-info"
+          data-aos="fade-right"
+          data-aos-duration="1200"
+        >
+          <div class="title">
+            <h4>Coordonnées</h4>
+          </div>
+          <div class="subtitle">
+            <p>
+              Nous sommes à votre disposition pour répondre à toutes vos
+              questions et commandes.
+            </p>
+          </div>
+
+          <ul class="contact-list">
+            <li class="list-item">
+              <div class="icon">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div class="details">
+                <label>Localisation</label>
+                <p>Kara, Tomdè, derrière le CHR Kara.</p>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="details">
+                <label>WhatsApp</label>
+                <a
+                  href="https://api.whatsapp.com/send?phone=22892010924"
+                  target="_blank"
+                >
+                  <p>+228 92010924</p>
+                </a>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="icon">
+                <i class="fa-solid fa-at"></i>
+              </div>
+              <div class="details">
+                <label>Email</label>
+                <a href="mailto:patalomjacques@gmail.com" target="_blank">
+                  <p>patalomjacques@gmail.com</p>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 Frigo Gloria. Tous droits réservés.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
